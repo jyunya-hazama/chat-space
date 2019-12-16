@@ -1,10 +1,24 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-||||
-||||
+|id|integer|null: false, foreign_key: true|
+|name|string||
+|email|string|null: false, foreign_key: true|
 
 ### Association
+- has_many :messages
+- has_many :groups_users
+
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|id|integer|null: false, foreign_key: true|
+|name|string||
+|groupname|string||
+
+### Association
+- has_many :groups_users
+
 
 ## groups_usersテーブル
 
