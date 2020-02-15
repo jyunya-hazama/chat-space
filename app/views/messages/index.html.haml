@@ -4,12 +4,15 @@
 
   .chat
     .header
-      ヘッダー
       .left-header
         .left-header__title
           グループ名
         %ul.left-header__members
-          メンバー:
+          Member：
+          %li.member
+            メンバー名
+          %li.member
+            メンバー名
           %li.member
             メンバー名
       .right-header
@@ -19,21 +22,30 @@
       .message
         .upper-message
           .upper-message__user-name
-            ユーザー1
+            メンバー
           .upper-message__date
-            2020/01/01
-        .lower-message
+            2017/04/04
+        .lower-meesage
           .lower-message__content
-            メッセージ1
+            メッセージ
       .message
         .upper-message
           .upper-message__user-name
-            ユーザー2
+            メンバー
           .upper-message__date
-            2020/01/01
-        .lower-message
+            2017/04/04
+        .lower-meesage
           .lower-message__content
-            メッセージ2
+            メッセージ
+      .message
+        .upper-message
+          .upper-message__user-name
+            メンバー
+          .upper-message__date
+            2017/04/04
+        .lower-meesage
+          .lower-message__content
+            メッセージ
     .form
       %form
         %input.form__message
